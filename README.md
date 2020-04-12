@@ -98,3 +98,6 @@ To run the script:
 	cd /path/to/catkin_ws/
 	./src/scripts/home_service_robot.zsh
 ```
+
+Home Service Robot:
+<p align="center"><img src="./readme/hsr.gif" width="600" /></p> 
