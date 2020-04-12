@@ -66,13 +66,13 @@ int main(int argc, char** argv) {
   LocationPublisher lp;
 
   // Pick up location 
-  goal.target_pose.pose.position.x = -4.60;
-  goal.target_pose.pose.position.y = -6.60;
+  goal.target_pose.pose.position.x =  6.60;
+  goal.target_pose.pose.position.y = -4.20;
   goal.target_pose.pose.position.z =  0.0;
   goal.target_pose.pose.orientation.x = 0.0;
   goal.target_pose.pose.orientation.y = 0.0;
-  goal.target_pose.pose.orientation.z = 0.40;
-  goal.target_pose.pose.orientation.w = 0.90;
+  goal.target_pose.pose.orientation.z = 0.90;
+  goal.target_pose.pose.orientation.w = 0.40;
   mbc.sendGoal(goal);
   ROS_INFO("Sent robot goal"); 
   mbc.waitForResult();
@@ -87,13 +87,13 @@ int main(int argc, char** argv) {
   ros::Duration(5, 0).sleep();
 
   // Drop-off location 
-  goal.target_pose.pose.position.x = 3.96;
-  goal.target_pose.pose.position.y = -2.00;
+  goal.target_pose.pose.position.x = -3.96;
+  goal.target_pose.pose.position.y = -4.00;
   goal.target_pose.pose.position.z =  0.0;
   goal.target_pose.pose.orientation.x = 0.0;
   goal.target_pose.pose.orientation.y = 0.0;
-  goal.target_pose.pose.orientation.z = -0.01;
-  goal.target_pose.pose.orientation.w = 1.0;
+  goal.target_pose.pose.orientation.z = 0.72;
+  goal.target_pose.pose.orientation.w = 0.68;
   mbc.sendGoal(goal);
   mbc.waitForResult();
   

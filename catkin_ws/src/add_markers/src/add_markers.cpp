@@ -176,24 +176,24 @@ int main( int argc, char** argv )
   mp.SetColor(1.0, 0.2, 1.0, 1.0);
 
   geometry_msgs::Pose pose;
-  pose.position.x = -4.60;
-  pose.position.y = -6.60;
+  pose.position.x =  6.60;
+  pose.position.y = -4.20;
   pose.position.z = 0;
   pose.orientation.x = 0.0;
   pose.orientation.y = 0.0;
-  pose.orientation.z = 0.40;
-  pose.orientation.w = 0.90;
+  pose.orientation.z = 0.90;
+  pose.orientation.w = 0.40;
   mp.SetStartPose(pose);
   mp.SetAction(Action::ID::START);
   mp.PublishMarker();
 
-  pose.position.x = 3.96;
-  pose.position.y = -2.00;
+  pose.position.x = -3.96;
+  pose.position.y = -4.00;
   pose.position.z = 0;
   pose.orientation.x = 0.0;
   pose.orientation.y = 0.0;
-  pose.orientation.z = -0.01;
-  pose.orientation.w = 1.0;
+  pose.orientation.z = 0.72;
+  pose.orientation.w = 0.68;
   mp.SetFinishPose(pose);
 
   ros::spin();

@@ -15,4 +15,4 @@ xterm  -e  "source ../../devel/setup.zsh;
 sleep 5
 
 xterm  -e  "source ../../devel/setup.zsh; 
-            rosrun add_markers add_markers" &
+            rosrun add_markers add_markers_test" &
