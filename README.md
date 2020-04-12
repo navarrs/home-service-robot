@@ -25,6 +25,7 @@ To compile:
 ## Scripts
 Note: on the scripts, I set a couple of variables with my custom paths. Make sure these variables match your paths:
 - TURTLEBOT_GAZEBO_WORLD_FILE
+- TURTLEBOT_GAZEBO_MAP_FILE
 
 ### Test SLAM
 Deploys a turtlebot inside an environment found in ```catkin_ws/src/map```, and control it with the keyboard to map the environment. 
@@ -36,12 +37,22 @@ To run the script:
 ```
 
 Gazebo should look like this:
-<p align="center">
-    <img src="./readme/gazebo.png" width="800" />
-</p>
+<p align="center"><img src="./readme/gazebo.png" width="800" /></p>
 
 Rviz should look like this:
-<p align="center">
-   <img src="./readme/rviz_slam.png" width="800" />
-</p> 
+<p align="center"><img src="./readme/rviz_slam.png" width="800" /></p> 
 
+### Test navigation 
+Tests the ROS navigation stack. Add a goal location on RVIZ using the 2D Nav Goal and test if the robot moves toward it and orients itself correctly. 
+
+To run the script:
+```
+	cd /path/to/catkin_ws/
+	./src/scripts/test_navigation.zsh
+```
+
+### Pick Objects
+
+### Add Markers
+
+### Home Service Robot

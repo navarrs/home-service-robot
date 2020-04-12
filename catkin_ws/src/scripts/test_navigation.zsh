@@ -1,7 +1,4 @@
 #!/bin/zsh
-
-
-
 xterm -e "source ../../devel/setup.zsh; 
 					export TURTLEBOT_GAZEBO_WORLD_FILE=/home/navars/Desktop/nanodegree/module5_pathplanning/catkin_ws/src/map/navarrs.world
           roslaunch turtlebot_gazebo turtlebot_world.launch" & 
